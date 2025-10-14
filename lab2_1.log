@@ -1,0 +1,57 @@
+Script started on 2025-10-14 20:35:56+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="81" LINES="43"]
+[?2004h[0;32m@AxRoma [0m➜ [1;34m/workspaces/os_lab_2025 [0;36m([1;31mmaster[0;36m) [0m$ cd lab2
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m/workspaces/os_lab_2025/lab2 [0;36m([1;31mmaster[0;36m) [0m$ cd swap
+[?2004lbash: cd: swap: No such file or directory
+[?2004h[0;32m@AxRoma [1;31m➜ [1;34m/workspaces/os_lab_2025/lab2 [0;36m([1;31mmaster[0;36m) [0m$ cd src
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m/workspaces/os_lab_2025/lab2/src [0;36m([1;31mmaster[0;36m) [0m$ cd swap
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ [7mcat > swap.c << 'EOF'[27m
+[7m#include "swap.h"[27m
+
+[7mvoid Swap(char *left, char *right)[27m
+[7m{[27m
+[7m    char temp = *left;[27m
+[7m    *left = *right;[27m
+[7m    *right = temp;[27m
+[7m}[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ cat > swap.c << 'EOF'
+#include "swap.h"
+
+void Swap(char *left, char *right)
+{
+    char temp = *left;
+    *left = *right;
+    *right = temp;
+}
+EOF
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ [7mgcc -o swap_program main.c swa[27m[7mp[27m[7m.c[27m[A[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ gcc -o swap_program main.c swap.c
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ [7m./swap_program[27m./swap_program
+[?2004lb a
+[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/swap [0;36m([1;31mmaster[0;36m) [0m$ св[K[Kcd /[K..
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m/workspaces/os_lab_2025/lab2/src [0;36m([1;31mmaster[0;36m) [0m$ cd revert_string
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ nano revert_string.c
+[?2004l[?2004h[?1049h[22;0;0t[1;43r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[41;34H(B[0;7m[ Reading... ](B[m[41;33H(B[0;7m[ Read 7 lines ](B[m[H(B[0;7m  GNU nano 7.2                     revert_string.c                               [1;80H(B[m[42d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[43d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d(B[0;1m[36m#include[39m(B[m (B[0;1m[33m"revert_string.h"[4d(B[0m[32mvoid[39m(B[m RevertString([32mchar[39m(B[m *str)[5d{[6;9H(B[0;1m[34m// your code here[7d[39m(B[m}[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d}[?25l[?12l[?25h[8d[?25l[1;52H(B[0;7m*[80G(B[m[7d}[?12l[?25h[?25l[?12l[?25h[K[?25l[6;26H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[41d[K[?12l[?25h[6;19H [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h/[K[?25l[?12l[?25h[42m[1K [49m(B[m [?25l[?12l[?25h[K[?25l[A{[?12l[?25h[?25l[?12l[?25h[K[?25l[4;29H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hcha[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[31mR[39m(B[m[K[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hvoi[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[2;27H[?12l[?25h[?25l[?12l[?25h[2;10H"revert_string.h[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h#includ[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[36m#[39m(B[m[K[?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[36m#include[39m(B[m (B[0;1m[33m"revert_string.h"[3d[36m#include[33m <string.h>[5d(B[0m[32mvoid[39m(B[m RevertString([32mchar[39m(B[m *str)[6d{[7;5H[32mint[39m(B[m length = strlen(str);[8;5H[32mint[39m(B[m i, j;[9;5H[32mchar[39m(B[m temp;[10d[42m    [11d(B[0;1m[33mfor[39m(B[m (i = 0, j = length - 1; i < j; i++, j--) {[12;9Htemp = str[i];[13;9Hstr[i] = str[j];[14;9Hstr[j] = temp;[15;5H}[16d}[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[C[?25l[?12l[?25h[4d[?25l[?12l[?25h[5;2H[?25l[?12l[?25h[A[?25l[?12l[?25h[A[C[?25l[?12l[?25h[4d[?25l[?12l[?25h[5;2H[?25l[?12l[?25h[A[?25l[?12l[?25h[5;2H[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A}[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[A[?25l[?12l[?25h[11d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[10d[?25l[?12l[?25h[A[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l7[8;41r8M[1;43r[8;1H[42m [9d[49m(B[m[1P[?12l[?25h[?25l[?12l[?25h^   [32mint[39m(B[m i, j;^[?25l[?12l[?25h^^   [32mint[39m(B[m i, j;^^[?25l[?12l[?25h^^^   [32mint[39m(B[m i, j;^^^[?25l[?12l[?25h^^^^   [32mint[39m(B[m i, j;[5G[?25l[?12l[?25h^^^^^   [32mint[39m(B[m i, j;[6G[?25l[?12l[?25h^^^^^^   [32mint[39m(B[m i, j;[7G[?25l[?12l[?25h[7G^   [32mint[39m(B[m i, j;[8G[?25l[?12l[?25h[8G^   [32mint[39m(B[m i, j;[9;9H[?25l[?12l[?25h(B[0;1m[31mG[39m(B[m   [32mint[39m(B[m i, j;[9;10H[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[8G[?25l[?12l[?25h[1P[7G[?25l[?12l[?25h[1P[6G[?25l[?12l[?25h[1P^^^^[?25l[?12l[?25h[1P^^^[?25l[?12l[?25h[1P^^[?25l[?12l[?25h[1P^[?25l[?12l[?25h[1P[?25l[9;41r[41;1H
+[1;43r[8;1H    [32mint[39m(B[m i, j; [?12l[?25h[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[41d(B[0;7mSave modified buffer?                                                            [42;1H Y(B[m Yes[K[43d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[41;23H[?12l[?25h[?25l[42d(B[0;7m^G(B[m Help[42;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[42;61H(B[0;7mM-B(B[m Backup File[43d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[43;61H(B[0;7m^T(B[m Browse[41d(B[0;7mFile Name to Write: revert_string.c(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;52H(B[0;7m [80G(B[m[41;32H(B[0;7m[ Wrote 15 lines ](B[m[J[43d[?12l[?25h[43;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ cat revert_string.c
+[?2004l#include "revert_string.h"
+#include <string.h>
+
+void RevertString(char *str)
+{
+    int length = strlen(str);
+    int i, j;
+    char temp;
+    
+    for (i = 0, j = length - 1; i < j; i++, j--) {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+    }
+}
+[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ [7mgcc -o revert_program[27m[7m [27m[7mmain.c revert_string.c[27m[A[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ gcc -o revert_program main.c revert_string.c
+[?2004l[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ ./revert_program "som ething"
+[?2004lReverted: gnihtemos
+[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ ./revert_program "123 45"
+[?2004lReverted: 54321
+[?2004h[0;32m@AxRoma [0m➜ [1;34m.../os_lab_2025/lab2/src/revert_string [0;36m([1;31mmaster[0;36m) [0m$ учше[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2025-10-14 20:57:27+00:00 [COMMAND_EXIT_CODE="0"]
